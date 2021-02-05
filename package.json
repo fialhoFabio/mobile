@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "android-hosts-mac": "adb root && adb remount && ./scripts/generateHostsFileMac.sh && adb push hosts /system/etc"
   },
   "dependencies": {
     "react": "^17.0.1",
